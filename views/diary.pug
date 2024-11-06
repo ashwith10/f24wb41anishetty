@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  h1 Ashwith Sai Anishetty
+  
+  .container-fluid
+    .row
+      each diary in results
+        .col-sm-2
+          h3= diary.diary_name
+          p Author: #{diary.author}
+          p Year: #{diary.year}
